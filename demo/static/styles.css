@@ -1,0 +1,25 @@
+body {
+background-color: #28282B;
+padding: 100px;
+margin: 0;
+}
+
+h1 {
+font-family: "Lato", sans-serif;
+color: aliceblue;
+width: 500px;
+}
+
+.center {
+text-align: center;
+margin: auto;
+}
+
+.gif {
+background-image: url(https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif);
+background-color: #000;
+background-position: center;
+background-size: cover;
+width: 100%;
+min-height: 100vh;
+padding: 0 }
