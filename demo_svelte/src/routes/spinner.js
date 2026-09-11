@@ -5,7 +5,7 @@ import {get} from "svelte/store";
 
 export default function spinner()
 {
-	let velocity = tweened(0, {easing:cubicInOut , duration:3000});
+	let velocity = tweened(0);//, {easing:cubicInOut , duration:3000}
 	let rotation = writable( {
         x: 0,
         y: 0,
@@ -18,13 +18,13 @@ export default function spinner()
 		if(!prev)prev = time;
 		let duration = time - prev;
 		prev = time;
-        rotation.update(r => ({ x: r.x + get(velocity) * duration,  y: r.y + get(velocity) * duration,  z: r.z + get(velocity) * duration}));
+        rotation.update(r => ({ x: r.x + 0.1* get(velocity) * duration,  y: r.y + 0.01 * get(velocity) * duration,  z: r.z + get(velocity) * duration}));
 		requestAnimationFrame(animate);
 	}
 	
 	return {
 		start:()=>{
-			velocity.set(1)
+			velocity.set(0.005)
 			if(running)return;
 			running = true;
 			requestAnimationFrame(animate);
