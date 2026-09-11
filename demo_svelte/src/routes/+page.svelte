@@ -8,7 +8,7 @@
 
 
 <div class="banner">
-	<h1>bajs</h1>
+	<h1 style="text-align: center; color:aliceblue; margin-top: 300px">bajs</h1>
 	
 	<button onclick={()=>spin.start()} style="margin-top:px">Start</button>
 	<button onclick={()=>spin.stop(oncomplete)}>Stop</button>
@@ -47,33 +47,31 @@
 		background-color: black;
 		border-radius: 10px;
 		
-		
-
 	}
 
 	.grid-container {
 		
 		display: grid;
-		grid-template-columns: 200px 200px 200px 200px 200px;
-		grid-template-rows: 400px 400px;
+		grid-template-columns: 400px 400px 400px 300px 300px;
+		grid-template-rows: 600px 600px;
 		gap: 1em;
 		justify-content: center;
 		grid-template-areas: "box-1 box-1 box-1 box-2 box-2" "box-3 box-3 box-4 box-4 box-4";
-			
 	}
+
 	.face {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  border: 2px solid white;
-  line-height: 200px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  background-image: url(https://static2.klipy.com/ii/f87f46a2c5aeaeed4c68910815f73eaf/0c/9d/MkZWWzPE.gif);
-  border: 1px solid #35d6b0;
-  border-radius: 20%;
-  background-size: cover;
+  		position: absolute;
+  		width: 500px;
+  		height: 500px;
+  		border: 2px solid white;
+  		line-height: 200px;
+  		text-align: center;
+  		font-size: 24px;
+  		font-weight: bold;
+  		color: white;
+  		background-image: url(https://static2.klipy.com/ii/f87f46a2c5aeaeed4c68910815f73eaf/0c/9d/MkZWWzPE.gif);
+  		border: 1px solid #35d6b0;
+  		border-radius: 20%;
+  		background-size: cover;
 	}
 </style>
