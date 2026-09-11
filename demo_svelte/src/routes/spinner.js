@@ -6,12 +6,12 @@ import {get} from "svelte/store";
 
 export default function spinner()
 {
-	let hej = Math.random()
+	
 	let velocity = tweened(0);//, {easing:cubicInOut , duration:3000}
 	let rotation = writable( {
-        x: hej, 
-        y: hej,
-        z: hej
+        x: 0, 
+        y: 0,
+        z: 0
     })
 	let position = writable( {
 		x: 0,
